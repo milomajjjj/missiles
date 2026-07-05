@@ -79,17 +79,20 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-@utility animate-fade-in {
-  animation: fade-in 0.8s ease-out both;
-}
 @utility animate-fade-out {
-  animation: fade-out 2s ease-out both;
+  animation: fade-out 0.5s ease-out forwards;
 }
+
 @utility animate-slow-zoom {
-  animation: slow-zoom 7s ease-out both;
+  animation: slow-zoom 2s ease-out forwards;
 }
+
+@utility animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
 @utility animate-slide-up {
-  animation: slide-up 0.7s ease-out both;
+  animation: slide-up 0.6s ease-out both;
 }
 @utility reveal-hidden {
   opacity: 0;

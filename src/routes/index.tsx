@@ -74,15 +74,11 @@ function Home() {
       <div className={showSplash ? "opacity-0" : "animate-fade-in"}>
         {/* NAV */}
         <header className="fixed top-0 inset-x-0 z-50 backdrop-blur-xl bg-background/75 border-b border-border">
-          <nav className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+           <nav className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
             <div className="flex items-center gap-2 shrink-0">
-             <div className="w-10 h-10 rounded-full overflow-hidden border border-olive/50 bg-white">
-  <img
-    src={harbiye}
-    alt="Harbiye"
-    className="w-full h-full object-cover"
-  />
-</div>
+              <div className="w-9 h-9 rounded-lg bg-olive/20 border border-olive/50 grid place-items-center">
+                <Rocket className="w-5 h-5 text-olive-glow" />
+              </div>
               <span className="hidden sm:inline font-black text-sm text-foreground">
                 الصواريخ العسكرية
               </span>

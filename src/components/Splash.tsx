@@ -4,14 +4,15 @@ import heroImg from "@/assets/hero-military.jpg";
 export function Splash({ onDone }: { onDone: () => void }) {
   const [fadingOut, setFadingOut] = useState(false);
 
-  useEffect(() => {
-    const t1 = setTimeout(() => setFadingOut(true), 5000);
-    const t2 = setTimeout(() => onDone(), 7000);
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-    };
-  }, [onDone]);
+useEffect(() => {
+  const t1 = setTimeout(() => setFadingOut(true), 1500);
+  const t2 = setTimeout(() => onDone(), 2000);
+
+  return () => {
+    clearTimeout(t1);
+    clearTimeout(t2);
+  };
+}, [onDone]);
 
   return (
     <div
@@ -29,7 +30,7 @@ export function Splash({ onDone }: { onDone: () => void }) {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background/80" />
       <div className="absolute inset-0 flex items-end justify-center pb-24">
-        <div className="text-center px-6 animate-fade-in">
+        <div className="text-center px-6 animate-slide-up">
           <div className="inline-block px-4 py-1 rounded-full border border-olive/50 text-olive-glow text-xs tracking-widest mb-4">
             MILITARY GUIDE
           </div>
